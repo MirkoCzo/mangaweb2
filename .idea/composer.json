@@ -1,0 +1,14 @@
+{
+  "name": "vendor_name/.idea",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Mirko",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}

@@ -1,9 +1,6 @@
 <?php
 session_start();
 include 'admin/lib/php/admin_liste_include.php';
-if(isset($_SESSION['client_id'])) {
-    var_dump($_SESSION['client_id']);
-}
 ?>
 <html lang="fr">
 <head>
