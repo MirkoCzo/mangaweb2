@@ -1,6 +1,7 @@
 <ul class="navbar navbar-expand- fixed-top l navbar-primary bg-dark">
     <li><a href="index.php?page=accueil.php">Accueil</a></li>
     <li><a href="index.php?page=mangashop.php">Boutique</a></li>
+    <li><a href="index.php?page=TestMPDF.php" target="_blank">Catalogue</a></li>
 
     <?php if (!isset($_SESSION['client'])): ?>
         <li><a href="index.php?page=login.php">Connexion</a></li>

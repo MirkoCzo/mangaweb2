@@ -39,11 +39,11 @@ if ($shonen>0)
             $mpdf->WriteHTML('<br>');
             $mpdf->WriteHTML('Prix : '.$mangas[$i]->prix. ' €');
             $imagePath = "./images/" . $mangas[$i]->image;
-            if (!file_exists($imagePath))
-            {
-                $imagePath = "./images/image-non-disponible.jpg";
+            if (!file_exists($imagePath) || empty(trim($mangas[$i]->image))) {
+                $mpdf->WriteHTML('<img src="./images/image-non-disponible.jpg" width="100px">');
+            } else {
+                $mpdf->WriteHTML('<img src="' . $imagePath . ' "width="100px">');
             }
-            $mpdf->WriteHTML('<img src="' . $imagePath . '" alt="Manga Image" width=100px>');
             $mpdf->WriteHTML('--------------------------------------------------------------------------------------------------------------------------------------------------------');
 
         }
@@ -75,11 +75,11 @@ if ($shojo>0)
             $mpdf->WriteHTML('<br>');
             $mpdf->WriteHTML('Prix : '.$mangas[$i]->prix. ' €');
             $imagePath = "./images/" . $mangas[$i]->image;
-            if (!file_exists($imagePath))
-            {
-                $imagePath = "./images/image-non-disponible.jpg";
+            if (!file_exists($imagePath) || empty(trim($mangas[$i]->image))) {
+                $mpdf->WriteHTML('<img src="./images/image-non-disponible.jpg" width="100px">');
+            } else {
+                $mpdf->WriteHTML('<img src="' . $imagePath . ' "width="100px">');
             }
-            $mpdf->WriteHTML('<img src="' . $imagePath . '" alt="Manga Image" width=100px>');
             $mpdf->WriteHTML('--------------------------------------------------------------------------------------------------------------------------------------------------------');
 
         }
@@ -111,11 +111,11 @@ if ($seinen>0)
             $mpdf->WriteHTML('<br>');
             $mpdf->WriteHTML('Prix : '.$mangas[$i]->prix. ' €');
             $imagePath = "./images/" . $mangas[$i]->image;
-            if (!file_exists($imagePath))
-            {
-                $imagePath = "./images/image-non-disponible.jpg";
+            if (!file_exists($imagePath) || empty(trim($mangas[$i]->image))) {
+                $mpdf->WriteHTML('<img src="./images/image-non-disponible.jpg" width="100px">');
+            } else {
+                $mpdf->WriteHTML('<img src="' . $imagePath . ' "width="100px">');
             }
-            $mpdf->WriteHTML('<img src="' . $imagePath . '" alt="Manga Image" width=100px>');
             $mpdf->WriteHTML('--------------------------------------------------------------------------------------------------------------------------------------------------------');
 
         }
